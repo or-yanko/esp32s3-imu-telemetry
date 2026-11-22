@@ -1,2 +1,3 @@
 host_test/crc_test
 host_test/protocol.o
+host_test/ring_buffer_test
