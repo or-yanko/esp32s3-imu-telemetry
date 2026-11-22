@@ -48,3 +48,21 @@ bool rb_push(RingBuffer *rb, const TelemetryPacket *pkt)
 
     return true;
 }
+
+bool rb_pop(RingBuffer *rb, TelemetryPacket *out_pkt)
+{
+    if (rb == NULL || out_pkt == NULL)
+    {
+        return false;
+    }
+    if (rb_is_empty(rb))
+    {
+        return false;
+    }
+
+    *out_pkt = rb->buffer[rb->tail];
+    rb->tail = (rb->tail + 1) % RING_BUFFER_CAPACITY;
+    rb->count--;
+
+    return true;
+}
