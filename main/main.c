@@ -9,7 +9,6 @@ void app_main(void)
 {
     RingBuffer rb;
     rb_init(&rb);
-
     TelemetryPacket pkt;
     build_packet(&pkt, 0, 0, 0, 16384, 0, 0, 0);
 
