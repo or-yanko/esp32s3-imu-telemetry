@@ -8,6 +8,7 @@ void rb_init(RingBuffer *rb)
     memset(rb->buffer, 0, sizeof(rb->buffer));
     rb->head = 0;
     rb->tail = 0;
+
     rb->count = 0;
 }
 
