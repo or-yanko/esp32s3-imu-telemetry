@@ -5,7 +5,6 @@
 int main(void)
 {
        /* 1. Verify raw CRC-16 calculation against standard test vector */
-
        const uint8_t test_data[] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
        uint16_t crc_original = calc_crc16(test_data, sizeof(test_data));
        printf("CRC result: 0x%04X (expected: 0x29B1) -> %s\n",
