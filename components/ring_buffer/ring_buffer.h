@@ -2,7 +2,6 @@
 #define RING_BUFFER_H
 
 #include <stdint.h>
-
 #include <stddef.h>
 #include <stdbool.h>
 #include "protocol.h"
