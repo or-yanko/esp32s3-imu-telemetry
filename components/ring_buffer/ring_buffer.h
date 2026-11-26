@@ -17,7 +17,8 @@ typedef struct
 
     TelemetryPacket buffer[RING_BUFFER_CAPACITY];
 
-    size_t head;  /* Write index */
+    size_t head; /* Write index */
+
     size_t tail;  /* Read index */
     size_t count; /* Current number of stored packets */
 } RingBuffer;
