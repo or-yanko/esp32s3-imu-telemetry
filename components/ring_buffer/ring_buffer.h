@@ -15,6 +15,7 @@
 
 typedef struct
 {
+
     TelemetryPacket buffer[RING_BUFFER_CAPACITY];
     size_t head;  /* Write index */
     size_t tail;  /* Read index */
