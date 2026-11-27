@@ -1,15 +1,9 @@
 #ifndef RING_BUFFER_H
-
 #define RING_BUFFER_H
-
 #include <stdint.h>
-
 #include <stddef.h>
-
 #include <stdbool.h>
-
 #include "protocol.h"
-
 /* Static capacity: 64 packets * 20 bytes = 1,280 bytes in RAM */
 #define RING_BUFFER_CAPACITY 64
 
