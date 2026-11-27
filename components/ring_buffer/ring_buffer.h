@@ -20,7 +20,8 @@ typedef struct
 
     size_t head; /* Write index */
 
-    size_t tail;  /* Read index */
+    size_t tail; /* Read index */
+
     size_t count; /* Current number of stored packets */
 } RingBuffer;
 
